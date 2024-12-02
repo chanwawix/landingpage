@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Boarding House Management System</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: maroon;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+              border-radius: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-container h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            font-size: 20px;
+            color: #2980b9;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .faq-item h3:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .faq-item p {
+            font-size: 16px;
+            color: #7f8c8d;
+            display: none;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+         .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: maroon;
+            transform: translateX(-5px);
+        }
+
+        .back-btn:active {
+            background-color: #2980b9;
+            transform: translateX(0);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boarding House Management System</h1>
+    </header>
+  <a href="landingpage.html" class="back-btn"> Back</a>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How do I register as a tenant?</h3>
+            <p>As a tenant you need to register with the land lord or ask his permission if you can rent or if there is still a vacancy.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What should I do if I encounter a maintenance issue?</h3>
+            <p>If you encounter an issue with staying, you can ask your land lord or say that there are issues with your roommate or your room.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I make a payment for my room?</h3>
+            <p>
+In order to pay for your room, you can advance or down a few payments and then wait a month before paying again.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I switch rooms during my stay?</h3>
+            <p>You can also move during your stay if you have a problem with your room or your roommate because you can't study or fucos with your neighbor because they are noisy.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What happens if I miss a payment?</h3>
+            <p>They can also evict you if you reach 5 months late in payment or it depends on your land lord if you don't have money you can also talk to your land lord and you can pay this month.</p>
+        </div>
+    </div>
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item h3').forEach((faqTitle) => {
+            faqTitle.addEventListener('click', () => {
+                const faqItem = faqTitle.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

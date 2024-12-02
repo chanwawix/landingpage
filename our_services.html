@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Boarding House Management System</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: maroon;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0 0;
+            color: #ecf0f1;
+        }
+
+        /* Main Content Styling */
+        .container {
+            padding: 30px;
+        }
+
+        .services-section {
+            margin: 20px auto;
+            max-width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .service-box {
+            background: #f4f4f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            flex-basis: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-box h3 {
+            font-size: 24px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .service-box p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Back Button Styling */
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: maroon;
+            transform: translateX(-5px);
+        }
+
+        .back-btn:active {
+            background-color: #2980b9;
+            transform: translateX(0);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boarding House Management System</h1>
+        <p>Efficient, Organized, and Reliable Management Solution</p>
+    </header>
+
+    <!-- Back Button with Styling -->
+    <a href="landingpage.html" class="back-btn"> Back</a>
+
+    <div class="container">
+        <div class="services-section">
+            <div class="service-box">
+                <h3>Tenant Management</h3>
+                <p>Manage tenant details, including room assignments, payment status, and contact information. Easily update and track tenant history.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Room Management</h3>
+                <p>Keep track of room availability, occupancy status. The system helps allocate rooms efficiently and monitor their status.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Payment Tracking</h3>
+                <p>Track tenant payments, due amounts, and payment history. Generate automated invoices and keep records of all transactions for easy reference.</p>
+            </div>
+
+             <div class="service-box">
+                <h3>View Rooms</h3>
+                <p> Allows users to see detailed information about the available and occupied rooms in the boarding house. It provides a clear overview of room types, occupancy status, ensuring efficient room management.
+            </p>
+            </div>
+
+            <div class="service-box">
+                <h3>Invoice Generation</h3>
+                <p>Generate invoices for tenants based on their room type and rental duration. Automatically calculate totals and manage payment status.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Payment</h3>
+                <p>Enables users to track and manage tenant payments, ensuring timely transactions. It provides features to view payment history, outstanding balances, and generate invoices for each tenant, streamlining the financial process.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
